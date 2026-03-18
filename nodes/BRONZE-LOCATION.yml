@@ -1,11 +1,11 @@
 fileVersion: 1
-id: 4070a3f1-199f-4020-ace9-b5afe1d92360
+id: cf996b81-2e8e-451c-81bd-87a31de552a8
 name: LOCATION
 operation:
   database: ""
   deployEnabled: true
   description: ""
-  locationName: SRC
+  locationName: BRONZE
   metadata:
     columns:
       - acceptedValues:
@@ -13,8 +13,8 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 9c8df24d-e71c-40d4-b099-a3b286ec1d1b
-          stepCounter: 4070a3f1-199f-4020-ace9-b5afe1d92360
+          columnCounter: a63396c6-ca98-4d01-af07-f81336cce535
+          stepCounter: cf996b81-2e8e-451c-81bd-87a31de552a8
         config: {}
         dataType: INT64
         defaultValue: "NULL"
@@ -30,8 +30,8 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 23b188bd-5bda-43b9-b38d-3ea4ee4acd1a
-          stepCounter: 4070a3f1-199f-4020-ace9-b5afe1d92360
+          columnCounter: 1be9ce8e-3556-49e3-9375-3086338f0460
+          stepCounter: cf996b81-2e8e-451c-81bd-87a31de552a8
         config: {}
         dataType: STRING
         defaultValue: "NULL"
@@ -47,8 +47,8 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 16c04bc9-3425-4487-a6c6-4f7a3ec83aab
-          stepCounter: 4070a3f1-199f-4020-ace9-b5afe1d92360
+          columnCounter: 0d6ac823-f7e6-428d-bcea-cd2a579cb18a
+          stepCounter: cf996b81-2e8e-451c-81bd-87a31de552a8
         config: {}
         dataType: STRING
         defaultValue: "NULL"
@@ -64,8 +64,8 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: a69bda58-e2c6-4d7e-b921-a72e5960e94e
-          stepCounter: 4070a3f1-199f-4020-ace9-b5afe1d92360
+          columnCounter: da38a7f1-040e-4e2d-9f38-47754487293a
+          stepCounter: cf996b81-2e8e-451c-81bd-87a31de552a8
         config: {}
         dataType: STRING
         defaultValue: "NULL"
@@ -81,8 +81,8 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: d81b6f39-39e1-4c4e-8ee4-b339cce642a9
-          stepCounter: 4070a3f1-199f-4020-ace9-b5afe1d92360
+          columnCounter: ead58d43-0540-425c-829c-2f9923c8bf2c
+          stepCounter: cf996b81-2e8e-451c-81bd-87a31de552a8
         config: {}
         dataType: STRING
         defaultValue: "NULL"

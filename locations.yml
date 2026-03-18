@@ -1,5 +1,6 @@
-defaultStorageMapping: TARGET
+defaultStorageMapping: SILVER
 fileVersion: 1
 locations:
-  - SRC
-  - TARGET
+  - BRONZE
+  - GOLD
+  - SILVER

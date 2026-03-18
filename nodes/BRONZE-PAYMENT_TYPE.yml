@@ -1,11 +1,11 @@
 fileVersion: 1
-id: 5809ac4d-f942-48ae-8fe0-343fed885017
-name: VENDOR
+id: 5d21d689-1f32-4a99-a760-1f2812d2f6ad
+name: PAYMENT_TYPE
 operation:
   database: ""
   deployEnabled: true
   description: ""
-  locationName: SRC
+  locationName: BRONZE
   metadata:
     columns:
       - acceptedValues:
@@ -13,13 +13,13 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 47821770-b092-4909-bea0-11c05beffa7f
-          stepCounter: 5809ac4d-f942-48ae-8fe0-343fed885017
+          columnCounter: c35a9a9d-ab97-4575-8936-934e6a08d8cc
+          stepCounter: 5d21d689-1f32-4a99-a760-1f2812d2f6ad
         config: {}
         dataType: INT64
         defaultValue: "NULL"
         description: ""
-        name: VENDOR_ID
+        name: PAYMENT_TYPE_ID
         nullable: true
         sourceColumnReferences:
           - columnReferences: []
@@ -30,19 +30,19 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 7b7a4cfb-2a88-4650-8cf6-cf6d6dc58cf6
-          stepCounter: 5809ac4d-f942-48ae-8fe0-343fed885017
+          columnCounter: 2c4c8727-5c40-402f-9c84-73fd07eb58d2
+          stepCounter: 5d21d689-1f32-4a99-a760-1f2812d2f6ad
         config: {}
         dataType: STRING
         defaultValue: "NULL"
         description: ""
-        name: VENDOR_NAME
+        name: PAYMENT_TYPE
         nullable: true
         sourceColumnReferences:
           - columnReferences: []
             transform: ""
         transform: ""
-  name: VENDOR
+  name: PAYMENT_TYPE
   schema: ""
   sqlType: Source
   type: sourceInput
