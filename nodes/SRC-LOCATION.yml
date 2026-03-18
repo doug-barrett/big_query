@@ -1,0 +1,101 @@
+fileVersion: 1
+id: 4070a3f1-199f-4020-ace9-b5afe1d92360
+name: LOCATION
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: SRC
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9c8df24d-e71c-40d4-b099-a3b286ec1d1b
+          stepCounter: 4070a3f1-199f-4020-ace9-b5afe1d92360
+        config: {}
+        dataType: INT64
+        defaultValue: "NULL"
+        description: ""
+        name: LOCATION_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 23b188bd-5bda-43b9-b38d-3ea4ee4acd1a
+          stepCounter: 4070a3f1-199f-4020-ace9-b5afe1d92360
+        config: {}
+        dataType: STRING
+        defaultValue: "NULL"
+        description: ""
+        name: BOROUGH
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 16c04bc9-3425-4487-a6c6-4f7a3ec83aab
+          stepCounter: 4070a3f1-199f-4020-ace9-b5afe1d92360
+        config: {}
+        dataType: STRING
+        defaultValue: "NULL"
+        description: ""
+        name: ZONE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: a69bda58-e2c6-4d7e-b921-a72e5960e94e
+          stepCounter: 4070a3f1-199f-4020-ace9-b5afe1d92360
+        config: {}
+        dataType: STRING
+        defaultValue: "NULL"
+        description: ""
+        name: SERVICE_ZONE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d81b6f39-39e1-4c4e-8ee4-b339cce642a9
+          stepCounter: 4070a3f1-199f-4020-ace9-b5afe1d92360
+        config: {}
+        dataType: STRING
+        defaultValue: "NULL"
+        description: ""
+        name: FILENAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+  name: LOCATION
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node

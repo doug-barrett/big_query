@@ -1,0 +1,50 @@
+fileVersion: 1
+id: 9f04b155-0cb1-4d85-8a3c-7bd69da3606f
+name: RATE_CODE
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: SRC
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: db3b7dc6-5c06-410a-ab92-b28c413fad94
+          stepCounter: 9f04b155-0cb1-4d85-8a3c-7bd69da3606f
+        config: {}
+        dataType: INT64
+        defaultValue: "NULL"
+        description: ""
+        name: RATE_CODE_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6c1d8969-6c24-4781-9aad-9f46583cf0fb
+          stepCounter: 9f04b155-0cb1-4d85-8a3c-7bd69da3606f
+        config: {}
+        dataType: STRING
+        defaultValue: "NULL"
+        description: ""
+        name: RATE_CODE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+  name: RATE_CODE
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node

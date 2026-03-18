@@ -1,0 +1,50 @@
+fileVersion: 1
+id: 5809ac4d-f942-48ae-8fe0-343fed885017
+name: VENDOR
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: SRC
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 47821770-b092-4909-bea0-11c05beffa7f
+          stepCounter: 5809ac4d-f942-48ae-8fe0-343fed885017
+        config: {}
+        dataType: INT64
+        defaultValue: "NULL"
+        description: ""
+        name: VENDOR_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7b7a4cfb-2a88-4650-8cf6-cf6d6dc58cf6
+          stepCounter: 5809ac4d-f942-48ae-8fe0-343fed885017
+        config: {}
+        dataType: STRING
+        defaultValue: "NULL"
+        description: ""
+        name: VENDOR_NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+  name: VENDOR
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node

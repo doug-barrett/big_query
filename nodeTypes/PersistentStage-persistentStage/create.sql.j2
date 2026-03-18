@@ -18,7 +18,7 @@ does not permit copying or modification for any other purpose.
             `{{ col.name }}` {{ col.dataType }}
             {% if col.isSurrogateKey %}
 		        DEFAULT GENERATE_UUID()
-            {% elif %}
+            {% else %}
                 {%- if col.defaultValue | length > 0 %}
                     DEFAULT {{ col.defaultValue }}
                 {% endif %}

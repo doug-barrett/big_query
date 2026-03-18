@@ -6,7 +6,7 @@ metadata:
   error: null
   nodeMetadataSpec: |
     capitalized: Work
-    short: WRK
+    short: wrk
     plural: Works
     tagColor: '#2EB67D'
 
@@ -99,5 +99,5 @@ metadata:
         syntax: sql
         isRequired: false
         enableIf: "{% if node.materializationType == 'view' %} false {% else %} true {% endif %}"
-name: Stage
+name: Work
 type: NodeType
