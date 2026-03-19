@@ -1,6 +1,6 @@
 fileVersion: 1
-id: 5d21d689-1f32-4a99-a760-1f2812d2f6ad
-name: PAYMENT_TYPE
+id: cb5fd800-001b-4ec3-8e7a-02b758647f29
+name: vendor
 operation:
   database: ""
   deployEnabled: true
@@ -13,13 +13,13 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: c35a9a9d-ab97-4575-8936-934e6a08d8cc
-          stepCounter: 5d21d689-1f32-4a99-a760-1f2812d2f6ad
+          columnCounter: 1f3930ef-ca9f-4edb-9b75-3f44f961f120
+          stepCounter: cb5fd800-001b-4ec3-8e7a-02b758647f29
         config: {}
         dataType: INT64
         defaultValue: "NULL"
         description: ""
-        name: PAYMENT_TYPE_ID
+        name: vendor_id
         nullable: true
         sourceColumnReferences:
           - columnReferences: []
@@ -30,19 +30,19 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 2c4c8727-5c40-402f-9c84-73fd07eb58d2
-          stepCounter: 5d21d689-1f32-4a99-a760-1f2812d2f6ad
+          columnCounter: 838422c3-36f7-43a1-bf52-8da553e46b5b
+          stepCounter: cb5fd800-001b-4ec3-8e7a-02b758647f29
         config: {}
         dataType: STRING
         defaultValue: "NULL"
         description: ""
-        name: PAYMENT_TYPE
+        name: vendor_name
         nullable: true
         sourceColumnReferences:
           - columnReferences: []
             transform: ""
         transform: ""
-  name: PAYMENT_TYPE
+  name: vendor
   schema: ""
   sqlType: Source
   type: sourceInput

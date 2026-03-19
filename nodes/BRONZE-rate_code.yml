@@ -1,6 +1,6 @@
 fileVersion: 1
-id: 6b3a2450-cbc3-46d9-93d1-59c01201882f
-name: RATE_CODE
+id: 5eeadc75-22f8-4890-9e79-6d22d55a361f
+name: rate_code
 operation:
   database: ""
   deployEnabled: true
@@ -13,13 +13,13 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: fee4fec7-e93d-4c39-9081-88b3f5c00256
-          stepCounter: 6b3a2450-cbc3-46d9-93d1-59c01201882f
+          columnCounter: f69c261e-32f8-4209-82c1-755a17e236ea
+          stepCounter: 5eeadc75-22f8-4890-9e79-6d22d55a361f
         config: {}
         dataType: INT64
         defaultValue: "NULL"
         description: ""
-        name: RATE_CODE_ID
+        name: rate_code_id
         nullable: true
         sourceColumnReferences:
           - columnReferences: []
@@ -30,19 +30,19 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 11aab557-e6f2-4d9d-8ff5-bcfabd3c5978
-          stepCounter: 6b3a2450-cbc3-46d9-93d1-59c01201882f
+          columnCounter: 0bf87fef-aadc-4c3f-b7b8-9ad86cb946fc
+          stepCounter: 5eeadc75-22f8-4890-9e79-6d22d55a361f
         config: {}
         dataType: STRING
         defaultValue: "NULL"
         description: ""
-        name: RATE_CODE
+        name: rate_code
         nullable: true
         sourceColumnReferences:
           - columnReferences: []
             transform: ""
         transform: ""
-  name: RATE_CODE
+  name: rate_code
   schema: ""
   sqlType: Source
   type: sourceInput
