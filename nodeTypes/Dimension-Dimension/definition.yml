@@ -52,7 +52,7 @@ metadata:
       - displayName: Enable Tests
         attributeName: testsEnabled
         type: toggleButton
-        default: false
+        default: true
         
       - displayName: Distinct
         attributeName: selectDistinct
@@ -111,6 +111,7 @@ metadata:
     - displayName: '{{NODE_NAME}}_key'
       transform: ''
       dataType: STRING
+      defaultValue: GENERATE_UUID()
       placement: beginning
       attributeName: isSurrogateKey
 
