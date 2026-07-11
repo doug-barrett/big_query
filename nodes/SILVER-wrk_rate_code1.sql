@@ -2,5 +2,5 @@
 @nodeType("461")
 SELECT
      "rate_code_id" AS "rate_code_id",
-     to_char("rate_code"."rate_code") AS "rate_code"
+     cast("rate_code"."rate_code" as string) AS "rate_code"
 FROM {{ ref('BRONZE', 'rate_code') }} `rate_code`
