@@ -1,0 +1,77 @@
+fileVersion: 1
+id: e49aa5b0-89d3-4e8f-b1e2-d6f540366c52
+name: STG_PAYMENT_TYPE
+operation:
+  database: ""
+  deployEnabled: true
+  description: "Staging layer over BRONZE.payment_type"
+  locationName: SILVER
+  name: STG_PAYMENT_TYPE
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+  materializationType: table
+  isMultisource: false
+  config:
+    insertStrategy: INSERT
+    truncateBefore: true
+    testsEnabled: false
+    selectDistinct: false
+    groupByAll: false
+    orderby: false
+    preSQL: ""
+    postSQL: ""
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 93b8dae7-f6ed-408f-a6f7-d8e1a3140703
+          stepCounter: e49aa5b0-89d3-4e8f-b1e2-d6f540366c52
+        config: {}
+        dataType: INT64
+        defaultValue: ""
+        description: ""
+        name: payment_type_id
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a503198f-6300-4a7e-99d1-60e1c68f9a8f
+                stepCounter: 9d7645da-7bc7-4ede-8ed7-066d5b2d30bd
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 86c468d9-deb8-46b4-9d6b-637efa2b3c64
+          stepCounter: e49aa5b0-89d3-4e8f-b1e2-d6f540366c52
+        config: {}
+        dataType: STRING
+        defaultValue: ""
+        description: ""
+        name: payment_type
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f6634b12-be74-4396-a8b5-d7102576c4f0
+                stepCounter: 9d7645da-7bc7-4ede-8ed7-066d5b2d30bd
+            transform: ""
+        transform: ""
+    sourceMapping:
+      - name: payment_type
+        aliases: {}
+        dependencies:
+          - locationName: BRONZE
+            nodeName: payment_type
+        join:
+          joinCondition: |
+            FROM {{ ref('BRONZE', 'payment_type') }} `payment_type`
+    cteString: ""
+    appliedNodeTests: []
+    enabledColumnTestIDs: []
+type: Node

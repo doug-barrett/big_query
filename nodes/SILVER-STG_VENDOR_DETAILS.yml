@@ -1,0 +1,115 @@
+fileVersion: 1
+id: 297ffe2f-9264-4059-ac29-18b4ddd58ba3
+name: STG_VENDOR_DETAILS
+operation:
+  database: ""
+  deployEnabled: true
+  description: "Staging layer over BRONZE.vendor_details"
+  locationName: SILVER
+  name: STG_VENDOR_DETAILS
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+  materializationType: table
+  isMultisource: false
+  config:
+    insertStrategy: INSERT
+    truncateBefore: true
+    testsEnabled: false
+    selectDistinct: false
+    groupByAll: false
+    orderby: false
+    preSQL: ""
+    postSQL: ""
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: a75386ec-c566-474b-82ff-b0fee8389356
+          stepCounter: 297ffe2f-9264-4059-ac29-18b4ddd58ba3
+        config: {}
+        dataType: INT64
+        defaultValue: ""
+        description: ""
+        name: vendor_id
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b1728cea-3d77-4087-b21b-61a8ae230585
+                stepCounter: f6e9fb5e-5a7c-4a73-aae3-6b34d14e2125
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 03a604c6-406b-4b19-a76e-27a3cfe59fa5
+          stepCounter: 297ffe2f-9264-4059-ac29-18b4ddd58ba3
+        config: {}
+        dataType: STRING
+        defaultValue: ""
+        description: ""
+        name: phone
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 341f417b-a0a0-4113-8b2e-5e1ee5c64bcd
+                stepCounter: f6e9fb5e-5a7c-4a73-aae3-6b34d14e2125
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 30ecbdab-d0f3-4d76-998e-11552805a57d
+          stepCounter: 297ffe2f-9264-4059-ac29-18b4ddd58ba3
+        config: {}
+        dataType: INT64
+        defaultValue: ""
+        description: ""
+        name: drivers
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9c0e73d2-97fa-4ebe-9ad4-97959a2fb5f0
+                stepCounter: f6e9fb5e-5a7c-4a73-aae3-6b34d14e2125
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 39c7a6d1-be3b-4e33-8dfa-0aa82d87d5f8
+          stepCounter: 297ffe2f-9264-4059-ac29-18b4ddd58ba3
+        config: {}
+        dataType: JSON
+        defaultValue: ""
+        description: ""
+        name: hq_address_details
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c350e905-de6d-4a9b-bb9a-02f59f736331
+                stepCounter: f6e9fb5e-5a7c-4a73-aae3-6b34d14e2125
+            transform: ""
+        transform: ""
+    sourceMapping:
+      - name: vendor_details
+        aliases: {}
+        dependencies:
+          - locationName: BRONZE
+            nodeName: vendor_details
+        join:
+          joinCondition: |
+            FROM {{ ref('BRONZE', 'vendor_details') }} `vendor_details`
+    cteString: ""
+    appliedNodeTests: []
+    enabledColumnTestIDs: []
+type: Node
