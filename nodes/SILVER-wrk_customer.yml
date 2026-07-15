@@ -1,0 +1,227 @@
+fileVersion: 1
+id: b47d3f4d-1ccb-42ce-b448-a15b6969aa9f
+name: wrk_customer
+operation:
+  config:
+    groupByAll: false
+    insertStrategy: INSERT
+    orderby: false
+    orderbycolumn:
+      items:
+        - {}
+    postSQL: ""
+    preSQL: ""
+    selectDistinct: false
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: Staging join of TPCH customer, nation, and region with null cleanup
+  isMultisource: false
+  locationName: SILVER
+  materializationType: table
+  metadata:
+    appliedNodeTests:
+      - continueOnFailure: false
+        description: Fail the stage (and block dim_customer publish) when region name is missing after join
+        name: Region name required
+        runOrder: After
+        templateString: |-
+          SELECT 1
+          FROM {{ this }}
+          WHERE `r_name` IS NULL OR TRIM(`r_name`) = ''
+    columns:
+      - appliedColumnTests:
+          hasNull: true
+          isDistinct: true
+        columnReference:
+          columnCounter: 794b00c0-f3f1-45c5-8ebc-e47ad8242d7f
+          stepCounter: b47d3f4d-1ccb-42ce-b448-a15b6969aa9f
+        config: {}
+        dataType: INT64
+        description: Customer business key
+        name: c_cust_id
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 190e4e10-ed1b-4c35-ad18-76d4eb557265
+                stepCounter: d068fa7b-1ce6-4576-9548-cdc8be38743e
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a21e45c5-13fc-4e8e-8f31-16d633280a80
+          stepCounter: b47d3f4d-1ccb-42ce-b448-a15b6969aa9f
+        config: {}
+        dataType: STRING
+        description: ""
+        name: c_name
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f647acac-08ed-4bb0-b01c-38516a61e1f8
+                stepCounter: d068fa7b-1ce6-4576-9548-cdc8be38743e
+            transform: COALESCE(`customer`.`c_name`, '')
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6c69eab0-7493-47e9-8c1f-954dcc098e3d
+          stepCounter: b47d3f4d-1ccb-42ce-b448-a15b6969aa9f
+        config: {}
+        dataType: STRING
+        description: ""
+        name: c_address
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 64789780-457f-433b-8ccd-f5c6b45de93c
+                stepCounter: d068fa7b-1ce6-4576-9548-cdc8be38743e
+            transform: COALESCE(`customer`.`c_address`, '')
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8112bddb-7c6c-429f-966f-48c069bf2236
+          stepCounter: b47d3f4d-1ccb-42ce-b448-a15b6969aa9f
+        config: {}
+        dataType: STRING
+        description: ""
+        name: c_phone
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5c155c73-238d-4b0c-82f4-0d3da76269bd
+                stepCounter: d068fa7b-1ce6-4576-9548-cdc8be38743e
+            transform: COALESCE(`customer`.`c_phone`, '')
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2b2098ed-2912-4e77-9f29-20dd7c665ad0
+          stepCounter: b47d3f4d-1ccb-42ce-b448-a15b6969aa9f
+        config: {}
+        dataType: FLOAT64
+        description: ""
+        name: c_acctbal
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d0a8f8ed-0727-479f-8764-8a5b93a499d4
+                stepCounter: d068fa7b-1ce6-4576-9548-cdc8be38743e
+            transform: COALESCE(`customer`.`c_acctbal`, 0)
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0015e457-1fe1-4596-af23-377862917074
+          stepCounter: b47d3f4d-1ccb-42ce-b448-a15b6969aa9f
+        config: {}
+        dataType: STRING
+        description: ""
+        name: c_mktsegment
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 50f46d2b-8fa0-44c2-b840-e47174024328
+                stepCounter: d068fa7b-1ce6-4576-9548-cdc8be38743e
+            transform: COALESCE(`customer`.`c_mktsegment`, '')
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ccd63905-e4e9-4fd5-b449-69cd7357d990
+          stepCounter: b47d3f4d-1ccb-42ce-b448-a15b6969aa9f
+        config: {}
+        dataType: STRING
+        description: ""
+        name: c_comment
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d502f63b-027a-49d0-b039-3ef967af3a89
+                stepCounter: d068fa7b-1ce6-4576-9548-cdc8be38743e
+            transform: COALESCE(`customer`.`c_comment`, '')
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 70b6a97c-6158-43fe-bca7-66210cef809d
+          stepCounter: b47d3f4d-1ccb-42ce-b448-a15b6969aa9f
+        config: {}
+        dataType: INT64
+        description: ""
+        name: n_nation_id
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 30988da7-ec9a-4743-b689-25ce70bd600d
+                stepCounter: 4146a7f8-a445-4cbc-a135-823974b1d8ec
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ffb3ebc9-9ee0-4dd6-a93a-0d2202dd1b4a
+          stepCounter: b47d3f4d-1ccb-42ce-b448-a15b6969aa9f
+        config: {}
+        dataType: STRING
+        description: ""
+        name: n_name
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 2812039a-968e-49e4-9459-10077ebf143a
+                stepCounter: 4146a7f8-a445-4cbc-a135-823974b1d8ec
+            transform: COALESCE(`nation`.`n_name`, '')
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f87bee7a-4f5d-4611-b20b-d338ff51c897
+          stepCounter: b47d3f4d-1ccb-42ce-b448-a15b6969aa9f
+        config: {}
+        dataType: INT64
+        description: ""
+        name: r_region_id
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a11f647e-994c-414a-b6e4-73ad01f28e33
+                stepCounter: 80f07514-24d1-4610-b281-1c7131f20316
+            transform: ""
+      - appliedColumnTests:
+          hasNull: true
+        columnReference:
+          columnCounter: f5257f73-0a4a-43ac-80f3-6d9d94ac7de7
+          stepCounter: b47d3f4d-1ccb-42ce-b448-a15b6969aa9f
+        config: {}
+        dataType: STRING
+        description: Joined region name; required for dimension publish
+        name: r_name
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 660fc344-5381-4b7e-a54c-9ead72e0d38f
+                stepCounter: 80f07514-24d1-4610-b281-1c7131f20316
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs:
+      - hasNull
+      - isDistinct
+    sourceMapping:
+      - aliases:
+          customer: d068fa7b-1ce6-4576-9548-cdc8be38743e
+          nation: 4146a7f8-a445-4cbc-a135-823974b1d8ec
+          region: 80f07514-24d1-4610-b281-1c7131f20316
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: BRONZE_TPCH
+            nodeName: customer
+          - locationName: BRONZE_TPCH
+            nodeName: nation
+          - locationName: BRONZE_TPCH
+            nodeName: region
+        join:
+          joinCondition: |-
+            FROM {{ ref('BRONZE_TPCH', 'customer') }} `customer`
+            INNER JOIN {{ ref('BRONZE_TPCH', 'nation') }} `nation`
+            ON `customer`.`c_nation_id` = `nation`.`n_nation_id`
+            INNER JOIN {{ ref('BRONZE_TPCH', 'region') }} `region`
+            ON `nation`.`n_region_id` = `region`.`r_region_id`
+            WHERE `customer`.`c_cust_id` IS NOT NULL
+              AND `region`.`r_name` IS NOT NULL
+              AND TRIM(`region`.`r_name`) != ''
+        name: wrk_customer
+        noLinkRefs: []
+  name: wrk_customer
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

@@ -1,0 +1,84 @@
+fileVersion: 1
+id: 4146a7f8-a445-4cbc-a135-823974b1d8ec
+name: nation
+operation:
+  database: sales-eng-project
+  deployEnabled: true
+  description: ""
+  locationName: BRONZE_TPCH
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2812039a-968e-49e4-9459-10077ebf143a
+          stepCounter: 4146a7f8-a445-4cbc-a135-823974b1d8ec
+        config: {}
+        dataType: STRING
+        defaultValue: ""
+        description: The name of the nation.
+        name: n_name
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 30988da7-ec9a-4743-b689-25ce70bd600d
+          stepCounter: 4146a7f8-a445-4cbc-a135-823974b1d8ec
+        config: {}
+        dataType: INT64
+        defaultValue: ""
+        description: A unique identifier for the nation.
+        name: n_nation_id
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3ebdf02e-90e0-4da7-b383-0a025e057ceb
+          stepCounter: 4146a7f8-a445-4cbc-a135-823974b1d8ec
+        config: {}
+        dataType: STRING
+        defaultValue: ""
+        description: A descriptive comment about the nation.
+        name: n_comment
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 500b14bb-7dda-4942-a64c-b16e740d6a2d
+          stepCounter: 4146a7f8-a445-4cbc-a135-823974b1d8ec
+        config: {}
+        dataType: INT64
+        defaultValue: ""
+        description: An identifier linking the nation to a specific region.
+        name: n_region_id
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+  name: nation
+  schema: TPCH
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node

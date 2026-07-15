@@ -1,0 +1,152 @@
+fileVersion: 1
+id: d068fa7b-1ce6-4576-9548-cdc8be38743e
+name: customer
+operation:
+  database: sales-eng-project
+  deployEnabled: true
+  description: ""
+  locationName: BRONZE_TPCH
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 190e4e10-ed1b-4c35-ad18-76d4eb557265
+          stepCounter: d068fa7b-1ce6-4576-9548-cdc8be38743e
+        config: {}
+        dataType: INT64
+        defaultValue: ""
+        description: A unique identifier for each individual or entity.
+        name: c_cust_id
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8061a38f-7cb4-4692-b852-bbbb95dbcca7
+          stepCounter: d068fa7b-1ce6-4576-9548-cdc8be38743e
+        config: {}
+        dataType: INT64
+        defaultValue: ""
+        description: An identifier representing the geographical region associated with the individual or entity.
+        name: c_nation_id
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d0a8f8ed-0727-479f-8764-8a5b93a499d4
+          stepCounter: d068fa7b-1ce6-4576-9548-cdc8be38743e
+        config: {}
+        dataType: FLOAT64
+        defaultValue: ""
+        description: The current financial balance of the individual or entity.
+        name: c_acctbal
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 64789780-457f-433b-8ccd-f5c6b45de93c
+          stepCounter: d068fa7b-1ce6-4576-9548-cdc8be38743e
+        config: {}
+        dataType: STRING
+        defaultValue: ""
+        description: The physical location details of the individual or entity.
+        name: c_address
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d502f63b-027a-49d0-b039-3ef967af3a89
+          stepCounter: d068fa7b-1ce6-4576-9548-cdc8be38743e
+        config: {}
+        dataType: STRING
+        defaultValue: ""
+        description: General textual remarks or notes pertaining to the individual or entity.
+        name: c_comment
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 50f46d2b-8fa0-44c2-b840-e47174024328
+          stepCounter: d068fa7b-1ce6-4576-9548-cdc8be38743e
+        config: {}
+        dataType: STRING
+        defaultValue: ""
+        description: The market segment to which the individual or entity belongs.
+        name: c_mktsegment
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f647acac-08ed-4bb0-b01c-38516a61e1f8
+          stepCounter: d068fa7b-1ce6-4576-9548-cdc8be38743e
+        config: {}
+        dataType: STRING
+        defaultValue: ""
+        description: The full name of the individual or entity.
+        name: c_name
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5c155c73-238d-4b0c-82f4-0d3da76269bd
+          stepCounter: d068fa7b-1ce6-4576-9548-cdc8be38743e
+        config: {}
+        dataType: STRING
+        defaultValue: ""
+        description: The contact telephone number for the individual or entity.
+        name: c_phone
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+  name: customer
+  schema: TPCH
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node

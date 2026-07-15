@@ -1,0 +1,67 @@
+fileVersion: 1
+id: 80f07514-24d1-4610-b281-1c7131f20316
+name: region
+operation:
+  database: sales-eng-project
+  deployEnabled: true
+  description: ""
+  locationName: BRONZE_TPCH
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0d959a10-34fc-4daf-89c9-d1558d7d757a
+          stepCounter: 80f07514-24d1-4610-b281-1c7131f20316
+        config: {}
+        dataType: STRING
+        defaultValue: ""
+        description: ""
+        name: r_comment
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 660fc344-5381-4b7e-a54c-9ead72e0d38f
+          stepCounter: 80f07514-24d1-4610-b281-1c7131f20316
+        config: {}
+        dataType: STRING
+        defaultValue: ""
+        description: ""
+        name: r_name
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: a11f647e-994c-414a-b6e4-73ad01f28e33
+          stepCounter: 80f07514-24d1-4610-b281-1c7131f20316
+        config: {}
+        dataType: INT64
+        defaultValue: ""
+        description: ""
+        name: r_region_id
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+  name: region
+  schema: TPCH
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node
